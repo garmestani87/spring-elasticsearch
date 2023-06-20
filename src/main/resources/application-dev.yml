@@ -1,0 +1,10 @@
+spring:
+  elasticsearch:
+    uris: #your elastic server
+    username: #user
+    password: #pass
+
+  profiles:
+    active: dev
+server:
+  port: 8090
