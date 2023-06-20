@@ -2,4 +2,4 @@ spring:
   config:
     use-legacy-processing: true
   application:
-    name: sample
+    name: ElasticSample
