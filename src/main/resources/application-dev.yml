@@ -1,8 +1,8 @@
 spring:
   elasticsearch:
-    uris: #your elastic server
-    username: #user
-    password: #pass
+    uris: # your elastic server Ip and port
+    username: # username
+    password: # password
 
   profiles:
     active: dev

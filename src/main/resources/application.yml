@@ -1,5 +1,5 @@
 spring:
-  config:
-    use-legacy-processing: true
   application:
     name: ElasticSample
+  profiles:
+    active: dev

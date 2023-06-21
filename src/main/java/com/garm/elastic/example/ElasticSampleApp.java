@@ -7,5 +7,5 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @ComponentScan(value = "com.garm")
 @EnableElasticsearchRepositories(basePackages = "com.garm.elastic.example.repository")
 @SpringBootApplication
-public class ElasticExampleApp {
+public class ElasticSampleApp {
 }

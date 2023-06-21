@@ -11,15 +11,21 @@ import java.io.Serializable;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ElasticExampleDto implements Serializable {
+public class LogRequestDto implements Serializable {
 
     @JsonProperty("id")
     private String id;
 
-    @JsonProperty("name")
-    private String firstname;
+    @JsonProperty("url")
+    private String url;
 
-    @JsonProperty("lastname")
-    private String lastname;
+    @JsonProperty("clientIp")
+    private String clientIp;
+
+    @JsonProperty("requestTime")
+    private String requestTime;
+
+    @JsonProperty("requestBody")
+    private Object requestBody;
 
 }

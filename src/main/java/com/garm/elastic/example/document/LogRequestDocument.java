@@ -12,15 +12,21 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(indexName = "sample", createIndex = true)
-public class ElasticExampleDocument {
+public class LogRequestDocument {
 
     @Id
     private String id;
 
-    @JsonProperty("name")
-    private String firstname;
+    @JsonProperty("url")
+    private String url;
 
-    @JsonProperty("lastname")
-    private String lastname;
+    @JsonProperty("clientIp")
+    private String clientIp;
+
+    @JsonProperty("requestTime")
+    private String requestTime;
+
+    @JsonProperty("requestBody")
+    private Object requestBody;
 
 }
